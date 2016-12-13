@@ -1,0 +1,142 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+//Skriver över färger
+$energized:                       #D72F28 !default; // uniadenröd
+$positive:                        #E3008A !default; // Rosa - Ekonomi
+$calm:                            #27BF4F !default; // Grön - Natur
+$balanced:                        #FF6500 !default; // Orange - IT-Media-Design
+$assertive:                       #00A8CA !default; // Blå - Teknik
+$royal:                           #7E1C91 !default; // Lila - HRM
+
+.dash-background.scroll-content{
+	background: url('../img/background.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+	z-index: 2;
+}
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,200,100&subset=latin,greek-ext);
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.uniaden-logo {
+    height: auto;
+    width: 60%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: block;
+}
+.uniadenHeaderLogo{
+	margin:auto;
+	display:block;
+	margin-top:8px;
+	height: 27px;
+}
+
+  .item-thumbnail-left > img:first-child,
+  .item-thumbnail-left .item-image,
+  .item-thumbnail-left .item-content > img:first-child,
+  .item-thumbnail-left .item-content .item-image
+	{
+		top: 0;
+		bottom:0;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: auto;
+    height: auto;
+	}
+
+.detailsImages{
+	width:50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.programmeSquare{
+	width: 100%;
+	margin-top: 2%;
+}
+.programmeSquare p{
+		text-align: center;
+		color: #FFF;
+}
+
+.programmeLineForCatalog {
+	margin-right:0;
+	opacity: 0.1;
+}
+.desiresProgramme{
+	opacity: 1;
+}
+.color-IT{
+	background: $balanced;
+}
+.color-Natur{
+	background: $calm;
+}
+.color-Ekonomi{
+	background: $positive;
+}
+.color-HRM{
+	background: $royal;
+}
+.color-Teknik{
+	background: $assertive;
+}
+.programmeColors {
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-top: 10%;
+	padding-bottom: 0%;
+}
+
+.details h2{
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.dashboardItem {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-width: 0px;
+	margin-bottom: 5px;
+}
+
+.dashboardItem p {
+	color: #cccccc;
+}
+
+.dashboardItem h2 {
+	color: #FFF;
+	font-weight: 200;
+	font-size: 24px;
+}
