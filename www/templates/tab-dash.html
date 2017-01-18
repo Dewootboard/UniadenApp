@@ -1,170 +1,176 @@
         <ion-view cache-view="false">
             <ion-content class="dash-background" scroll="false">
-                <img src="img/uniadenLogo.png" class="uniaden-logo">
-
-                <!-- Slider på toppen av appen som uppmärksammmar användaren om vad som är nytt-->
+                <img src="img/uniaden_header.png" class="uniaden-logo"/>
              
-                 <ion-content scroll="false">
-                    <ion-slide-page>
-                        <div class="item-avatar dashboardItem" type="item-text-wrap">
-                            <img src="img/snapchat.jpg" />
-                            <i class="icon icon-accessory"></i>
-                            <p>
-                                Visste du att vi har ett snapchat-filter för
-                                Uniaden2017? Dela evenemanget med #Uniaden2017.
-                            </p>
-                        </div>
-                    </ion-slide-page>
-                </ion-content>
-                       
-               
-                <ion-list>
-                    <!--
-                    Nedan är de tre knapparna på startsidan
-                    ng-click öppnar respektive modal som just nu är hårdkodade.
-                    PROTIP: Gör en rss-feed eller något annat skoj istället för hårdkod.
-                    Samma sak gäller för closeModal(), respektive modal stängs mha ng-click.
-                    -->
+                <ion-item class="item-avatar item-icon-right dashboardItem" type="item-text-wrap">
+                        <img src="img/instagram.jpg">
+                        <h2>#uniaden17</h2>
+                        <i class="icon icon-accessory"></i>
+                </ion-item>
+                   
 
-                    <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(1)" type="item-text-wrap">
-                        <img src="img/massan.jpg">
-                        <h2>Mässan</h2>
-                        <i class="icon ion-chevron-right icon-accessory"></i>
-                    </ion-item>
+                    <!-- Slider på toppen av appen som uppmärksammmar användaren om vad som är nytt-->
+                    <!--   <ion-content scroll="false">
+            <ion-slide-page>
+                <div class="item-avatar dashboardItem" type="item-text-wrap">
+                    <img src="img/snapchat.jpg" />
+                    <i class="icon icon-accessory"></i>
+                    <p>
+                        Visste du att vi har ett snapchat-filter för
+                        Uniaden2017? Dela evenemanget med #Uniaden2017.
+                    </p>
+                </div>
+            </ion-slide-page>
+        </ion-content> -->
 
-                   <!--Tillfälligt bortaget tills den nya kartan är färdig-->
-                 <!--<ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(2)" type="item-text-wrap">
-                        <img src="img/mapThumbnail.jpg">
-                        <h2>Mässkarta</h2>
-                        <i class="icon ion-chevron-right icon-accessory"></i>
-                    </ion-item>-->
 
-                    <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(3)" type="item-text-wrap">
-                        <img src="img/partyThumbnail.jpg">
-                        <h2>Club Uniaden</h2>
-                        <i class="icon ion-chevron-right icon-accessory"></i>
-                    </ion-item>
-                </ion-list>
-
-                <script id="templates/tips.html" type="text/ng-template">
-                    <ion-modal-view class="modal">
+                    <ion-list>
                         <!--
-                        Det går ej att ha bilder i en ion-header-bar, därför har vi ion-nav-bar ist.
-                        -->
-                        <ion-nav-bar align-title="center">
-                            <ion-nav-buttons side="left">
-                                <button ng-click="closeModal(1)" class="button icon ion-arrow-left-c"></button>
-                            </ion-nav-buttons>
-                            <ion-nav-title>
-                                <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
-                            </ion-nav-title>
-                        </ion-nav-bar>
-                        <ion-content class="padding has-header">
-                            <div class="card">
-                                <div class="item item-text-wrap">
-                                    <p style="font-size:16px;"><b>Välkommen till Uniaden 2017!</b></p>
-                                    <p style="margin-bottom:5%;">
+            Nedan är de tre knapparna på startsidan
+            ng-click öppnar respektive modal som just nu är hårdkodade.
+            PROTIP: Gör en rss-feed eller något annat skoj istället för hårdkod.
+            Samma sak gäller för closeModal(), respektive modal stängs mha ng-click.
+            -->
 
-                                        I din hand finns kort information som ska hjälpa dig att få ut mer av arbetsmarknadsdagen.
-                                        <br>
-                                        <br> Vid varje entré till mässområdet får varje besökare ett färgat nyckelband att hänga runt halsen. Detta för att färgen symboliserar huvudinriktningen i din utbildning, och snabbt visar utställarna på mässan vad du pluggar. Färgerna som
-                                        symboliserar din huvudinriktning i utbildningen hittar ni även i de olika montrarna på mässan. Varje utställare har skyltning där de visar vilka utbildningar de riktar sig emot främst med färgkoderna.
-                                    </p>
+                        <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(1)" type="item-text-wrap">
+                            <img src="img/massan.jpg">
+                            <h2>Mässan</h2>
+                            <i class="icon ion-chevron-right icon-accessory"></i>
+                        </ion-item>
 
-                                    <div class="programmeSquare color-Ekonomi">
-                                        <p>Ekonomi</p>
-                                    </div>
-                                    <div class="programmeSquare color-Teknik">
-                                        <p>Teknik</p>
-                                    </div>
-                                    <div class="programmeSquare color-IT">
-                                        <p>IT-Media-Design</p>
-                                    </div>
-                                    <div class="programmeSquare color-Natur">
-                                        <p>Naturvetenskap</p>
-                                    </div>
-                                    <div class="programmeSquare color-HRM">
-                                        <p>HR Management</p>
+                        <!--Tillfälligt bortaget tills den nya kartan är färdig-->
+                        <!--<ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(2)" type="item-text-wrap">
+                <img src="img/mapThumbnail.jpg">
+                <h2>Mässkarta</h2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>-->
+
+                        <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(3)" type="item-text-wrap">
+                            <img src="img/partyThumbnail.jpg">
+                            <h2>Club Uniaden</h2>
+                            <i class="icon ion-chevron-right icon-accessory"></i>
+                        </ion-item>
+                    </ion-list>
+
+                    <script id="templates/tips.html" type="text/ng-template">
+                        <ion-modal-view class="modal">
+                            <!--
+                Det går ej att ha bilder i en ion-header-bar, därför har vi ion-nav-bar ist.
+                -->
+                            <ion-nav-bar align-title="center">
+                                <ion-nav-buttons side="left">
+                                    <button ng-click="closeModal(1)" class="button icon ion-arrow-left-c"></button>
+                                </ion-nav-buttons>
+                                <ion-nav-title>
+                                    <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                                </ion-nav-title>
+                            </ion-nav-bar>
+                            <ion-content class="padding has-header">
+                                <div class="card">
+                                    <div class="item item-text-wrap">
+                                        <p style="font-size:16px;"><b>Välkommen till Uniaden 2017!</b></p>
+                                        <p style="margin-bottom:5%;">
+
+                                            I din hand finns kort information som ska hjälpa dig att få ut mer av arbetsmarknadsdagen.
+                                            <br>
+                                            <br> Vid entrén till mässområdet får varje besökare ett färgat nyckelband att hänga runt halsen. Detta för att färgen symboliserar huvudinriktningen i din utbildning, och snabbt visar utställarna på mässan vad du pluggar. Färgerna som
+                                            symboliserar din huvudinriktning i utbildningen hittar ni även i de olika montrarna på mässan. Varje utställare har skyltning där de visar vilka utbildningar de riktar sig emot främst med färgkoderna.
+                                        </p>
+
+                                        <div class="programmeSquare color-Ekonomi">
+                                            <p>Ekonomi</p>
+                                        </div>
+                                        <div class="programmeSquare color-Teknik">
+                                            <p>Teknik</p>
+                                        </div>
+                                        <div class="programmeSquare color-IT">
+                                            <p>IT-Media-Design</p>
+                                        </div>
+                                        <div class="programmeSquare color-Natur">
+                                            <p>Naturvetenskap</p>
+                                        </div>
+                                        <div class="programmeSquare color-HRM">
+                                            <p>HR Management</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item item-image">
-                                <img src="img/massan.jpg">
-                            </div>
-                            <div class="item item-text-wrap">
-                                <p style="font-size:16px;"><b>Tips:</b></p>
-                            </div>
-                            <div class="item item-text-wrap">
-                                <p>No limits! Prata inte bara med företag som just är typiska för din bransch. Andra företag kan också erbjuda något intressant för dig!</p>
-                            </div>
-                            <div class="item item-text-wrap">
-                                <p>Apropå tidigare tips. Fråga vad företagen kan erbjuda just dig?</p>
-                            </div>
-                            <div class="item item-text-wrap">
-                                <p>Besök studentloungen! Där finns allt från CV fotografering till härligt häng, gå och kika in den!</p>
-                            </div>
-                            <div class="item item-text-wrap">
-                                <p>Missa inte eftersläppet till Uniadens bankett, Club Uniaden! För endast 50 kronor kan du säkra din plats, biljetter hittar ni i studentloungen.</p>
-                            </div>
-                        </ion-content>
-                    </ion-modal-view>
-                </script>
-                <!--Tillfälligt bortkommenterat tills den nya kartan är färdig-->
-           <!--     <script id="templates/map.html" type="text/ng-template">
-                    <ion-modal-view class="modal">
-                        <ion-nav-bar align-title="center">
-                            <ion-nav-buttons side="left">
-                                <button ng-click="closeModal(2)" class="button icon ion-arrow-left-c"></button>
-                            </ion-nav-buttons>
-                            <ion-nav-title>
-                                <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
-                            </ion-nav-title>
-                        </ion-nav-bar>
-                        <ion-content class="padding has-header">
-
-                            <div class="item item-image">
-                                <img src="img/app_map.png">
-                            </div>
-                        </ion-content>
-                    </ion-modal-view>
-                </script> -->
-
-                <script id="templates/club.html" type="text/ng-template">
-                    <ion-modal-view class="modal">
-                        <ion-nav-bar align-title="center">
-                            <ion-nav-buttons side="left">
-                                <button ng-click="closeModal(3)" class="button icon ion-arrow-left-c"></button>
-                            </ion-nav-buttons>
-                            <ion-nav-title>
-                                <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
-                            </ion-nav-title>
-                        </ion-nav-bar>
-                        <ion-content class="padding has-header">
-                            <div class="card">
+                                <div class="item item-image">
+                                    <img src="img/massan.jpg">
+                                </div>
                                 <div class="item item-text-wrap">
+                                    <p style="font-size:16px;"><b>Tips:</b></p>
+                                </div>
+                                <div class="item item-text-wrap">
+                                    <p>No limits! Prata inte bara med företag som just är typiska för din bransch. Andra företag kan också erbjuda något intressant för dig!</p>
+                                </div>
+                                <div class="item item-text-wrap">
+                                    <p>Apropå tidigare tips. Fråga vad företagen kan erbjuda just dig?</p>
+                                </div>
+                                <div class="item item-text-wrap">
+                                    <p>Besök studentloungen! Där finns allt från CV fotografering till härligt häng, gå och kika in den!</p>
+                                </div>
+                                <div class="item item-text-wrap">
+                                    <p>Missa inte eftersläppet till Uniadens bankett, Club Uniaden! För endast 20 kronor kan du säkra din plats.</p> <!-- Platsen meddelas senare -->
+                                </div>
+                            </ion-content>
+                        </ion-modal-view>
+                    </script>
+                    <!--Tillfälligt bortkommenterat tills den nya kartan är färdig-->
+                    <!--     <script id="templates/map.html" type="text/ng-template">
+            <ion-modal-view class="modal">
+                <ion-nav-bar align-title="center">
+                    <ion-nav-buttons side="left">
+                        <button ng-click="closeModal(2)" class="button icon ion-arrow-left-c"></button>
+                    </ion-nav-buttons>
+                    <ion-nav-title>
+                        <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                    </ion-nav-title>
+                </ion-nav-bar>
+                <ion-content class="padding has-header">
 
-                                    <p>
-                                        Nedanstående event är inte uppdaterad. Mer information om eventet kommer snart. För att fira mässan slår vi på stort och vill bjuda in alla studenter att vara med i festligheterna. 
-                                        400 personer i form av studenter och företagsrepresentanter är redan på plats på Corona efter Uniadens bankett. Vill du göra något roligare
-                                        utav tisdagen den 31 januari? Då är du välkommen till Corona för Uniadens eftersläpp Club Uniaden!
-                                        <br>
-                                        <br> Plats: Corona
-                                        <br> Tid: 23.00
-                                        <br> Ålder: 20 år (18 år med giltigt kårleg)
-                                        <br> Pris: 50:- endast förköp, säljer ej i dörren. Pengarna går till Uniadens insamling hos Barncancerfonden!
-                                        <br>
-                                        <br> Biljetter kan köpas i studentloungen på mässan!
-                                        <br>
-                                        <br> Vid funderingar kontakta projektledare@uniaden.com
-                                        <br>
-                                    </p>
-                                    <div class="item item-image">
-                                        <img src="img/partyThumbnail.jpg">
+                    <div class="item item-image">
+                        <img src="img/app_map.png">
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script> -->
+
+                    <script id="templates/club.html" type="text/ng-template">
+                        <ion-modal-view class="modal">
+                            <ion-nav-bar align-title="center">
+                                <ion-nav-buttons side="left">
+                                    <button ng-click="closeModal(3)" class="button icon ion-arrow-left-c"></button>
+                                </ion-nav-buttons>
+                                <ion-nav-title>
+                                    <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                                </ion-nav-title>
+                            </ion-nav-bar>
+                            <ion-content class="padding has-header">
+                                <div class="card">
+                                    <div class="item item-text-wrap">
+
+                                        <p>
+                                            Fira avslutet på årets mässa tillsammans med oss!
+                                            Den 31 januari hålls årets upplaga av Uniaden. Vi vill självklart inte att ni ska avsluta dagen efter mässans slut. Vi bjuder därför in er till en storslagen fest på universitetet!
+                                            <br>
+                                            Club Uniaden är stället där du kan festa tillsammans med andra studenter och företagsrepresentanter. Ett härligt sätt att avsluta årets mässa.
+                                            <br>
+                                            <br> Plats: Universum (Brashörnan)
+                                            <br> Tid: 22:45
+                                             <!-- Åldersgränsen kommer senare -->
+                                            <br> Pris: 20:-
+                                           <!-- Vart man köper biljetter kommer senare -->
+                                           
+                                            <br> Vid funderingar kontakta bankett@uniaden.com
+                                            <br>
+                                        </p>
+                                        <div class="item item-image">
+                                            <img src="img/partyThumbnail.jpg">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </ion-content>
-                    </ion-modal-view>
-                </script>
-            </ion-content>
-        </ion-view>
+                            </ion-content>
+                        </ion-modal-view>
+                    </script>
+                </ion-content>
+</ion-view>

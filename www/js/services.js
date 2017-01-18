@@ -17,7 +17,9 @@ angular.module('starter.services', [])
         maxWidth: 50,
         showDelay: 0
       });
-      $http.get('http://a.jexpo.se/uniaden/exhibitors?profile[logotype]&profile[ad]&exhibition&_limit=0').then(function(response){
+
+      //http://a.jexpo.se/uniaden/exhibitors?profile[logotype]&profile[ad]&exhibition&_limit=0
+      $http.get('http://api.jexpo.se/exhibitors?namespace=uniaden&limit=0').then(function(response){
         companies = response.data;
         dfd.resolve(companies);
         $ionicLoading.hide();
@@ -25,9 +27,9 @@ angular.module('starter.services', [])
       return dfd.promise;
     },
     get: function(companyId) {
-      for (var i = 0; i < companies._models.length; i++) {
-        if (companies._models[i].id === companyId ){
-          return companies._models[i];
+      for (var i = 0; i < companies.length; i++) {
+        if (companies[i].id === companyId ){
+          return companies[i];
         }
       }
       return null;

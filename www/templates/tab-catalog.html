@@ -9,14 +9,16 @@
 
       <!--
       Funktionen ng-repeat loopar igenom json-filen med alla företag.
-      I json-filen ligger alla utställande företag med variabelnamnet _models och companyData
+      I json-filen ligger alla utställande företag där companyData
       är namnet på json-arrayen inne i appen. Se på rad 58 i controllers.
       -->
 
-      <ion-item class="item-thumbnail-left" ng-repeat="company in companyData._models | orderBy:'name'" ng-click="openDetails(company.id)" type="item-text-wrap">
-        <img src="http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[1]._url}}">
-        <h2 style="margin-top:2%;">{{ company.name }}</h2>
+      <ion-item class="item-thumbnail-left" ng-repeat="company in companyData | orderBy:'name'" ng-click="openDetails(company.id)" type="item-text-wrap">
+        <img src="{{company.profile.logotype.thumbnails.small.url}}"/>
+        <h2 style="margin-top:2%;">{{ company.profile.name }}</h2>
         <p>{{ company.profile.aboutUs }}</p>
+        
+        <!-- Gamla kataloglänken som ska test-release "http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[1]._url}}"-->
         <!--
         Alla programfärger ligger i ionic.app.scss.
         Klassen programmeLineForCatalog har opacity:0.1;
@@ -43,14 +45,15 @@
         <ion-header-bar align-title="middle" class="bar-energized">
 
           <button ng-click="closeModal()" class="button icon ion-arrow-left-c"></button>
-          <h1 class="title" style="font-family: Roboto; font-weight:400; ">{{company.name}}</h1>
+          <h1 class="title" style="font-family: Roboto; font-weight:400; ">{{company.profile.name}}</h1>
 
         </ion-header-bar>
 
         <ion-content class="padding">
 
+          <!-- Länk till gamla katalogen för att gå in i företaget "http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[0]._url}}" -->
           <div class="card">
-            <img class="detailsImages" src="http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[0]._url}}">
+            <img class="detailsImages" src="{{company.profile.logotype.thumbnails.large.url}}">
 
             <div class="row" style="margin-bottom:2%;">
               <!--Samma lösning som innan för att fylla programfärger-->
@@ -81,12 +84,11 @@
             <p>{{ company.profile.aboutUs }}</p>
             <h2>Varför besöka oss?</h2>
             <p>{{ company.profile.whyUs }}</p>
-            <h2>Visste du detta?</h2>
-            <p>{{ company.profile.didYouKnow }}</p>
             <!--
             Overridar width:50% med 100% för annonsen.
             -->
-            <img class="detailsImages" style="width:100%;" src="http://a.jexpo.se/uniaden{{company.profile.ad.thumbnails[0]._url}}">
+            <img class="detailsImages" style="width:100%;" src="{{company.profile.ad.thumbnails.large.url}}">
+            <!-- Företagetsbild länkad "http://a.jexpo.se/uniaden{{company.profile.ad.thumbnails[0]._url}}" -->
           </div>
         </ion-content>
       </ion-modal-view>
