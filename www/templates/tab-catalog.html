@@ -1,4 +1,4 @@
-<!-- Kommenterar tillfälligt bort katalogen för att test-realease den här versionen
+
 
 <ion-view>
   <ion-nav-bar>
@@ -9,19 +9,18 @@
   <ion-content>
     <ion-list>
 
-    -->
 
       <!--
       Funktionen ng-repeat loopar igenom json-filen med alla företag.
       I json-filen ligger alla utställande företag där companyData
       är namnet på json-arrayen inne i appen. Se på rad 58 i controllers.
       -->
-<!--
+
       <ion-item class="item-thumbnail-left" ng-repeat="company in companyData | orderBy:'name'" ng-click="openDetails(company.id)" type="item-text-wrap">
         <img src="{{company.profile.logotype.thumbnails.small.url}}"/>
         <h2 style="margin-top:2%;">{{ company.profile.name }}</h2>
         <p>{{ company.profile.aboutUs }}</p>
-        -->
+        
         <!-- Gamla kataloglänken som ska test-release "http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[1]._url}}"-->
         <!--
         Alla programfärger ligger i ionic.app.scss.
@@ -29,7 +28,7 @@
         Klassen desiresProgramme ställer opacity till 1 när indexOf-funktionen
         returnernar ett sant värde.
         -->
-<!--
+
         <div class="row programmeColors">
           <div class="col programmeLineForCatalog color-Ekonomi" ng-class="{desiresProgramme: company.profile.desiredProgramme.indexOf('Ekonomi') != -1}"></div>
           <div class="col programmeLineForCatalog color-IT" ng-class="{desiresProgramme: company.profile.desiredProgramme.indexOf('IT-Media-Design') != -1}"></div>
@@ -39,13 +38,13 @@
         </div>
       </ion-item>
     </ion-list>
--->
+
     <!--
     Nedan är koden för detaljvyn.
     Detaljvyn öppnas i appen som en "modal", vilket är en ruta som lägger sig över
     katalogen.
     -->
-<!--
+
     <script id="templates/details-modal.html" type="text/ng-template">
       <ion-modal-view class="modal">
         <ion-header-bar align-title="middle" class="bar-energized">
@@ -56,16 +55,16 @@
         </ion-header-bar>
 
         <ion-content class="padding">
--->     
+     
           <!-- Länk till gamla katalogen för att gå in i företaget "http://a.jexpo.se/uniaden{{company.profile.logotype.thumbnails[0]._url}}" -->
-<!--
+
           <div class="card">
             <img class="detailsImages" src="{{company.profile.logotype.thumbnails.large.url}}">
 
             <div class="row" style="margin-bottom:2%;">
-            -->
+            
               <!--Samma lösning som innan för att fylla programfärger-->
-<!--
+
               <div class="col programmeLineForCatalog color-Ekonomi" ng-class="{desiresProgramme: company.profile.desiredProgramme.indexOf('Ekonomi') != -1}"></div>
               <div class="col programmeLineForCatalog color-IT" ng-class="{desiresProgramme: company.profile.desiredProgramme.indexOf('IT-Media-Design') != -1}"></div>
               <div class="col programmeLineForCatalog color-Teknik" ng-class="{desiresProgramme: company.profile.desiredProgramme.indexOf('Teknik') != -1}"></div>
@@ -93,14 +92,14 @@
             <p>{{ company.profile.aboutUs }}</p>
             <h2>Varför besöka oss?</h2>
             <p>{{ company.profile.whyUs }}</p>
--->
+
             <!--
             Overridar width:50% med 100% för annonsen.
             -->
-<!--
-            <img class="detailsImages" style="width:100%;" src="{{company.profile.ad.thumbnails.large.url}}"> -->
+
+            <img class="detailsImages" style="width:100%;" src="{{company.profile.ad.thumbnails.large.url}}">
             <!-- Företagetsbild länkad "http://a.jexpo.se/uniaden{{company.profile.ad.thumbnails[0]._url}}" -->
-         <!--
+         
           </div>
         </ion-content>
       </ion-modal-view>
@@ -108,4 +107,3 @@
 
   </ion-content>
 </ion-view>
--->
