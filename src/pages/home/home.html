@@ -15,36 +15,14 @@
 
    </div>
    <ion-content>
-      <button ion-button color="danger" (click)="goToMasskarta()">
+      <button ion-button color="danger" (click)="goToOtherPage()">
         <ion-icon name="information-circle">   Om Uniaden </ion-icon>
       </button>
       <button ion-button color="danger">
         <ion-icon name="map">   Mässkarta </ion-icon>
       </button>
-      <button ion-button color="danger">
+      <button ion-button color="danger" onclick="window.open('http://www.uniaden.com/', '_system')">
         <ion-icon name="globe">   Hemsida </ion-icon>
       </button>
    </ion-content>
-</ion-content>
-
-goToMasskarta(){
-  this.navCtrl.push(Masskarta);
-}
-
-@Component({
-  template:
-  <ion-header>
-    <ion-navbar>
-      <ion-title>
-           <ion-icon name="information" onclick="window.open('https://www.instagram.com/uniaden/', '_system')">
-               <span style="font-family: 'Times New Roman', Georgia, Sans-Serif"> Uniaden18</span>
-           </ion-icon>
-     </ion-title>
-    </ion-navbar>
-  </ion-header>
-
-  <ion-content padding>
-     En annan sida
-  </ion-content>
-})
-class Masskarta{}
+ </ion-content>
