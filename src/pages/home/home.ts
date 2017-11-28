@@ -19,10 +19,13 @@ export class HomePage {
 }
 
 @Component({
-  templateUrl: `Masskarta.html`
+  template: `
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Other Page</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>I'm the other page!</ion-content>`
 })
-class OtherPage {
-  constructor(){
-    
-  }
-}
+class OtherPage {}
