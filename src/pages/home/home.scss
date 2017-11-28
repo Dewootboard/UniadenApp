@@ -1,6 +1,5 @@
-::-webkit-scrollbar,
-*::-webkit-scrollbar {
-    display: none;
+.scroll-content {
+  overflow-y: hidden;
 }
 
 /*div{ //Debugging reasons
@@ -11,12 +10,16 @@
     background-image: url('/assets/imgs/Logg.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
     width: 100%;
-    height: 100%;
     margin: 0 auto;
     z-index: 1;
     position: absolute;
+    padding: 0 0 0 0;
+}
+
+.padderino {
+  height: 60%;
 }
 
 button {
