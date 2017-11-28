@@ -6,4 +6,5 @@ import { NavController } from 'ionic-angular';
 })
 export class MassKarta {
   constructor(public navCtrl: NavController) {}
+
 }
