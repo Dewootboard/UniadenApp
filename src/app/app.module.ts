@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { Exhibitors } from '../pages/exhibitors/exhibitors';
+import { Event } from '../pages/event/event';
 import { MassKarta } from '../pages/masskarta/masskarta';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -19,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MassKarta,
     HomePage,
+    Event,
     TabsPage
   ],
   imports: [
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MassKarta,
     HomePage,
-    TabsPage
+    TabsPage,
+    Event
   ],
   providers: [
     StatusBar,

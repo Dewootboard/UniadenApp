@@ -5,7 +5,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-scroll zoom="true" scrollX="true" scrollY="true" maxZoom="20" style="height:100%">
+  <ion-scroll
+    direction="xy"
+    zooming="true"
+    min-zoom="1.0"
+    max-zoom="2.5"
+    overflow-scroll="false"
+    has-bouncing="false"
+    >
+  
   <img src="assets/imgs/app_map.png">
   </ion-scroll>
 </ion-content>
