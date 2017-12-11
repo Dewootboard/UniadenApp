@@ -1,19 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Om uniaden.
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
-  <ion-header>
-    <ion-navbar>
-      <ion-title>
-        Om uniaden.
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  
   <div padding>
     <ion-segment [(ngModel)]="pet">
       <ion-segment-button value="kittens">
-        Kittens
+        Om Uniaden
       </ion-segment-button>
       <ion-segment-button value="puppies">
-        Puppies
+        Övrig info
       </ion-segment-button>
     </ion-segment>
   </div>
@@ -21,9 +21,6 @@
   <div [ngSwitch]="pet">
     <ion-list *ngSwitchCase="'puppies'">
       <ion-item>
-        <ion-thumbnail item-start>
-          <img src="img/thumbnail-puppy-1.jpg">
-        </ion-thumbnail>
         <h2>Ruby</h2>
       </ion-item>
       ...
@@ -31,9 +28,6 @@
 
     <ion-list *ngSwitchCase="'kittens'">
       <ion-item>
-        <ion-thumbnail item-start>
-          <img src="img/thumbnail-kitten-1.jpg">
-        </ion-thumbnail>
         <h2>Luna</h2>
       </ion-item>
       ...
