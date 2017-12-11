@@ -1,10 +1,8 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title> Mässkarta</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
+  <button ion-button color="light" icon-only (click)="goBack()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+
   <ion-scroll
     direction="xy"
     zooming="true"
@@ -13,7 +11,7 @@
     overflow-scroll="false"
     has-bouncing="false"
     >
-  
+
   <img src="assets/imgs/app_map.png">
   </ion-scroll>
 </ion-content>
