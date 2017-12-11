@@ -10,4 +10,7 @@ export class AboutPage {
 
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
 }
