@@ -16,8 +16,10 @@
       </ion-segment-button>
     </ion-segment>
   </div>
-
-  <ion-list *ngSwitchCase="'back'" (click)="goBack()"> </ion-list>
+  
+  <div [ngSwitch]="info">
+    <ion-list *ngSwitchCase="'back'" (click)="goBack()"> </ion-list>
+  </div>
 
   <div [ngSwitch]="info">
     <ion-list *ngSwitchCase="'other info'">
