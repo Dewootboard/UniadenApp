@@ -17,23 +17,38 @@
   <div [ngSwitch]="pet">
     <ion-list *ngSwitchCase="'puppies'">
       <ion-item>
-        <h2>Ruby</h2>
+        <h2>Hålltider</h2>
       </ion-item>
-      ...
+      Följande tider kan vara bra att hålla koll på om du vill få ut så mycket som möjligt av Uniaden 2018
+      Öppettider: 09.00-15.00
+      Föreläsare...
     </ion-list>
+
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'puppies'">
+        <ion-item>
+          <h2>Färgkodade nyckelband</h2>
+        </ion-item>
+        Under Uniaden kommer nyckelband att delas ut till alla besökare. Nyckelbanden har fem olika färger (samt en sjätte och sjunde, röd för koordinatorer respektive svart för projektgruppen) vilken ska matcha huvudinriktningen på ens studier. Förutom att alla besökare kommer få nyckelband, kommer även alla företag under fliken Utställare samt på mässan vara uppmärkta efter samma färgsystem. Mer information om nyckelbanden samt uppdelningen av olika program finner du på http://www.uniaden.com/about/#keybands
+      </ion-list>
+    </div>
+
+      <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'puppies'">
+          <ion-item>
+            <h2>Start-up Valley</h2>
+          </ion-item>
+          Information om startup valley...
+        </ion-list>
+      </div>
 
     <ion-list *ngSwitchCase="'kittens'">
       <ion-item>
-        <h2>Luna</h2>
+        <h2>Vad är Uniaden?</h2>
       </ion-item>
-      ...
+      Uniaden är namnet på Sveriges bredaste arbetsmarknadsdag som årligen arrangeras vid Umeå universitet. Syftet med Uniaden är att utgöra en mötesplats för studenter och näringslivet. Studenterna får här under sin utbildningstid möjlighet att utforska vilka möjligheter som finns efter avslutad utbildning, möjligheter för exjobb, uppsatsskrivande, sommarjobb etc.
+      Vår ambition är att studenterna ska få utöka sitt nätverk under studietiden samt att få upp ögonen för vilka möjligheter som finns efter avslutad utbildning. Uniadens arrangerar årligen en arbetsmarknadsdag som går av stapeln vecka 5 i januari varje år. Utöver mässdagen arrangerar Uniaden tillsammans med intressanta företag ett flertal event, inspirerande gästföreläsningar, studiebesök och hackathon under hösten där studenter vid Umeå universitet får chansen att komma i kontakt med intressanta företag och organisationer.
     </ion-list>
   </div>
 
-  <ion-scroll>
-    <div padding>
-      Uniaden är namnet på Sveriges bredaste arbetsmarknadsdag som årligen arrangeras vid Umeå universitet. Syftet med Uniaden är att utgöra en mötesplats för studenter och näringslivet. Studenterna får här under sin utbildningstid möjlighet att utforska vilka möjligheter som finns efter avslutad utbildning, möjligheter för exjobb, uppsatsskrivande, sommarjobb etc.
-      Vår ambition är att studenterna ska få utöka sitt nätverk under studietiden samt att få upp ögonen för vilka möjligheter som finns efter avslutad utbildning. Uniadens arrangerar årligen en arbetsmarknadsdag som går av stapeln vecka 5 i januari varje år. Utöver mässdagen arrangerar Uniaden tillsammans med intressanta företag ett flertal event, inspirerande gästföreläsningar, studiebesök och hackathon under hösten där studenter vid Umeå universitet får chansen att komma i kontakt med intressanta företag och organisationer.
-    </div>
-  </ion-scroll>
 </ion-content>
