@@ -5,6 +5,9 @@
 
   <div padding>
     <ion-segment [(ngModel)]="info">
+      <ion-segment-button value="back">
+        Bakåt
+      </ion-segment-button>
       <ion-segment-button value="about">
         Om Uniaden
       </ion-segment-button>
@@ -13,6 +16,8 @@
       </ion-segment-button>
     </ion-segment>
   </div>
+
+  <ion-list *ngSwitchCase="'back'" (click)="goBack()"> </ion-list>
 
   <div [ngSwitch]="info">
     <ion-list *ngSwitchCase="'other info'">
