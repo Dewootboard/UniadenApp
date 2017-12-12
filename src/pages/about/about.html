@@ -1,13 +1,10 @@
 <ion-content padding>
   <button ion-button color="light" icon-only (click)="goBack()">
-    <ion-icon name="arrow-back"></ion-icon>
+    <ion-icon name="arrow-back" >Bakåt</ion-icon>
   </button>
 
   <div padding>
     <ion-segment [(ngModel)]="info">
-      <ion-segment-button value="back">
-        Bakåt
-      </ion-segment-button>
       <ion-segment-button value="about">
         Om Uniaden
       </ion-segment-button>
@@ -15,10 +12,6 @@
         Övrig info
       </ion-segment-button>
     </ion-segment>
-  </div>
-  
-  <div [ngSwitch]="info">
-    <ion-list *ngSwitchCase="'back'" (click)="goBack()"> </ion-list>
   </div>
 
   <div [ngSwitch]="info">
