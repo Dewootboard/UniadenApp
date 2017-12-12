@@ -15,7 +15,7 @@
   </div>
 
   <div [ngSwitch]="pet">
-    <ion-list *ngSwitchWhen="'puppies'" ngSelected="selected">
+    <ion-list *ngSwitchWhen="'puppies'">
       <ion-item>
         <h2>Hålltider</h2>
       </ion-item>
@@ -25,7 +25,7 @@
     </ion-list>
 
     <div [ngSwitch]="pet">
-      <ion-list *ngSwitchWhen="'puppies'" ngSelected="selected">
+      <ion-list *ngSwitchWhen="'puppies'">
         <ion-item>
           <h2>Färgkodade nyckelband</h2>
         </ion-item>
@@ -34,7 +34,7 @@
     </div>
 
       <div [ngSwitch]="pet">
-        <ion-list *ngSwitchWhen="'puppies'" ngSelected="selected">
+        <ion-list *ngSwitchWhen="'puppies'">
           <ion-item>
             <h2>Start-up Valley</h2>
           </ion-item>
