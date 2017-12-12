@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 export class AboutPage {
 
   constructor(public navCtrl: NavController) {
-    this.pet = "puppies";
+    this.info = "about";
   }
 
   goBack() {
