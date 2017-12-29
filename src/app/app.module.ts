@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MassKarta,
     HomePage,
     Event,
-    TabsPage
+    TabsPage,
   ],
   imports: [
     BrowserModule,
