@@ -5,9 +5,8 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-
+  private info:string = "about";
   constructor(public navCtrl: NavController) {
-    this.info = "about";
   }
 
   goBack() {

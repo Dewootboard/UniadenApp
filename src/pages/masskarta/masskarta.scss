@@ -1,7 +1,10 @@
-.scroll-view{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ion-scroll {
+    white-space: nowrap;
+    margin-top:125px;
+    position:fixed;
+    display:inline;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
 }

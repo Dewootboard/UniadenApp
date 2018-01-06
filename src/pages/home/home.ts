@@ -5,6 +5,7 @@ import { MassKarta } from '../masskarta/masskarta';
 import { AboutPage } from '../about/about';
 
 @Component({
+   selector: "home",
   templateUrl: 'home.html',
 })
 export class HomePage {

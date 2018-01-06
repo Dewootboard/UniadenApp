@@ -1,30 +1,41 @@
+<ion-header>
+ <ion-navbar>
+   <ion-title>
+        <ion-icon name="logo-instagram" onclick="window.open('https://www.instagram.com/uniaden/', '_system')">
+            <span style="font-family: 'Times New Roman', Georgia, Sans-Serif"> Uniaden18</span>
+        </ion-icon>
+  </ion-title>
+ </ion-navbar>
+</ion-header>
 
-  <ion-header>
-    <ion-navbar>
-      <ion-title>
-           <ion-icon name="logo-instagram" onclick="window.open('https://www.instagram.com/uniaden/', '_system')">
-               <span style="font-family: 'Times New Roman', Georgia, Sans-Serif"> Uniaden18</span>
-           </ion-icon>
-     </ion-title>
-    </ion-navbar>
-  </ion-header>
-
-  <ion-content padding>
-     <ion-content class="ion-background">
-     </ion-content>
-     <div class="padderino">
-
-     </div>
-
-     <ion-content>
-        <button ion-button color="danger" (click)="goToAboutPage()">
-          <ion-icon name="information-circle">   Om Uniaden </ion-icon>
-        </button>
-        <button ion-button color="danger" (click)="goToMassKarta()">
-          <ion-icon name="map">   Mässkarta </ion-icon>
-        </button>
-        <button ion-button color="danger" onclick="window.open('http://www.uniaden.com/', '_system')">
-          <ion-icon name="globe">   Hemsida </ion-icon>
-        </button>
-     </ion-content>
-  </ion-content>
+<ion-content class="ion-background">
+   <ion-grid class="bottom-aligned">
+      <ion-row justify-content-center>
+         <ion-col col-50 col-offset-25>
+            <div>
+            <button ion-button (click)="goToAboutPage()">
+               <ion-icon name="information-circle"> Om Uniaden</ion-icon>
+            </button>
+            </div>
+         </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+         <ion-col col-50 col-offset-25>
+            <div>
+            <button ion-button (click)="goToMassKarta()">
+               <ion-icon name="map"> Mässkarta</ion-icon>
+            </button>
+            </div>
+         </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+         <ion-col col-50 col-offset-25>
+            <div>
+            <button ion-button onclick="window.open('http://www.uniaden.com/', '_system')">
+               <ion-icon name="globe"> Hemsida</ion-icon>
+            </button>
+            </div>
+         </ion-col>
+      </ion-row>
+   </ion-grid>
+</ion-content>

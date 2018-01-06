@@ -1,54 +1,127 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>About</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content padding>
-  <!--<button ion-button color="light" icon-only (click)="goBack()">
-    <ion-icon name="arrow-back" >Bakåt</ion-icon>
-</button> -->
-
-  <div padding>
+  <div padding scrollY="false">
     <ion-segment [(ngModel)]="info">
-      <ion-segment-button value="about">
-        Om Uniaden
-      </ion-segment-button>
-      <ion-segment-button value="other info">
-        Övrig info
-      </ion-segment-button>
+      <ion-segment-button value="about"> Om Uniaden </ion-segment-button>
+      <ion-segment-button value="other"> Övrig info </ion-segment-button>
     </ion-segment>
   </div>
 
-   <div [ngSwitch]="info">
-      <ion-list-header>{{ ngModel }}</ion-list-header>
-      <ion-list *ngSwitchCase="'other info'">
-         <ion-item>
-            <h2>Hålltider</h2>
-            <p>Följande tider kan vara bra att hålla koll på om du vill få ut så mycket som möjligt av Uniaden 2018
-            Öpinfotider: 09.00-15.00
-            Föreläsare...</p>
-         </ion-item>
+   <div [ngSwitch]="info" no-padding>
+      <ion-list *ngSwitchCase="'other'">
+         <ion-scroll scrollY="true" >
+            <ion-item text-wrap>
+               <h2>Uniadens hålltider</h2>
+               <ul>
+                  <li>Mässan öppnar: <i>09:00</i></li>
+                  <li>Insläpp till gästföreläsning: <i>11:30</i></li>
+                  <li>Gästföreläsning med Nour El Refai: <i>12.00</i></li>
+                  <li>Mässan stänger: <i>15:00</i></li>
+                  <li>Bankett eftersläpp: <i>22.15</i></li>
+               </ul>
+            </ion-item>
 
-         <ion-item>
-            <h2>Färgkodade nyckelband</h2>
-            <p>Under Uniaden kommer nyckelband att delas ut till alla besökare. Nyckelbanden har fem olika färger (samt en sjätte och sjunde, röd för koordinatorer respektive svart för projektgruppen) vilken ska matcha huvudinriktningen på ens studier. Förutom att alla besökare kommer få nyckelband, kommer även alla företag under fliken Utställare samt på mässan vara uppmärkta efter samma färgsystem. Mer information om nyckelbanden samt uppdelningen av olika program finner du på http://www.uniaden.com/about/#keybands</p>
-         </ion-item>
+            <ion-item text-wrap>
+               <h2>Persontransport</h2>
+               <p>Under och efter banketten/eftersläppet kommer det finnas möjlighet att få rabatterat pris på EcoTaxi. För att erhålla rabatt på resan så måste ni ladda ner och boka resan via EcoTaxis app. När ni bokar taxin fyller ni i fältet som heter "kampanj", där fyller ni i rabattkoden ("Uniaden") INNAN ni genomför bokningen. När ni fyllt i detta fällt och appen godkänt rabattkoden så kommer man per automatik erhålla ett pris när man bokar som är 20% rabatterat mot ordinarie pris. Appen ger alltid kunden ett fast pris på resan dessutom!</p>
+            </ion-item>
 
-         <ion-item>
-            <h2>Start-up Valley</h2>
-            <p>Information om startup valley...</p>
-         </ion-item>
+            <ion-item text-wrap>
+               <h2>Info om banketten:</h2>
+               <p>För er som har varit engagerad i Uniaden 2018 och som har anmält er till banketten har möjlighet att vara med på den storslagna banketten som sätter punkt för Uniaden 2018!</p>
+               <ul>
+                  <li>Datum: 30 januari</li>
+                  <li>Plats: Universum</li>
+                  <li>Insläpp: 18:00, ingång via Corona</li>
+                  <li>Klädsel: Mörk kostym</li>
+                  <li>Vi utlovar en magisk kväll!</li>
+               </ul>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Uniaden Afterparty 2018</h2>
+               <p>30/1 klockan 22:15 slår vi upp portarna till årets eftersläpp på Corona; Uniaden Afterparty! Ingång via Corona. Inträde 50 kr innan kl. 23.00.</p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Studentlounge</h2>
+               <dl>
+                  <li>Öppettider: 09.00-15.00</li>
+                  <li>Plats: Mitt emot Amigo, nedre plan av Universum</li>
+               </dl>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Mässans öppettider: 09.00-15.00</h2>
+               <p>Till de 100 första besökarna utlovas en välfylld frukostpåse i studentloungen!</p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Gästföreläsare</h2>
+               <p>Ta chansen att bli inspirerad och motiverad av årets välkända gästföreläsare som inte är mindre än Nour El Refai.  Gästföreläsningen börjar kl. 12.00 i Aula Nordica och kräver ingen föranmälan och är gratis. Insläppet börjar kl. 11.30 så kom i tid!</p>
+               <p>I TV har vi kunnat se Nour i bland annat; Babel, Cirkus Möller samt som gästreporter i Nyhtesmorgon i TV4. Som skådespelerska har Nour även engagerats för flera filmsuccéer som Beck och Wallander. I Umeå kommer Nour att berätta om hennes tankar kring vad som är modigt och inte samt hur man överlever i en mansdominerad bransch som tjej dessutom som ung och utländsk.</p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Dejta en direktör</h2>
+               <p>Umeå Näringslivsservice och Uniaden ger dig chansen till ett möte som kan ge dig värdefulla tips inför din framtida karriär, eller kanske till och med ett jobb!</p>
+               <p>Det enda du behöver göra är att fylla i formuläret nedan. Anmäl dig senast den 30 januari 23.59. Vi meddelar alla lyckliga vinnare via mail under början av februari:</p>
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2rtXm-0k-TAEYi2rGB-hjdOD9b8JIwdgzmqe1x_MUwmqX7w/viewform?usp=sf_link" padding-left>Formuläret</a>
+            </ion-item>
+
+            <h1 padding-left>Nyheter för 2018!</h1>
+
+            <ion-item text-wrap>
+               <h2>StartUp Valley</h2>
+               <p>Går du i tankar på att starta eget eller vill du få inspiration? Du kanske själv vill ställa frågor till personer som själv startat eget? Besök då StartUp Valley. Detta är ett område med enbart nystartade företag där du kan få mer insikt om hur det är att driva eget. I år har vi valt att expandera detta område med fler spännande företag. StartUp Valley hittar ni på plan 2 i Universum.</p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Draknästet</h2>
+               <p>I samarbete med Uminova Innovation, Venture cup och Umeå Näringslivsservice har Uniaden i år valt att införa en pitchtävling vid namn Draknästet. I draknästet har du chans att få pitcha din affärsidé framför en jury bestående av olika branschpersoner. Du får här möjligheten att vara med och få feedback på just din affärsidé. Som en extra bonus har du chansen att vara med och vinna 5 000 kr. Kom ihåg att din affärsidé behöver inte vara färdigutvecklad, men så länge du har en idé så vill vi gärna höra den! Draknästet kommer att äga rum den 21 februari, mer information och anmälan till tävlingen hittar du på: <a href="http://www.uniaden.com/draknastet/">uniaden.com/draknastet</a> </p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Miljömärkt Event</h2>
+               <p>Uniaden slår ett Som ett steg för att vara ett hållbart event så har vi på Uniaden i år arbetat för att bli miljöcertifierade av Håll Sverige Rent. Arbetet har resulterat i att Uniaden 2018 uppfyller de kriterier för att vara ett miljömärkt event. Vi har därför några enkla knep för att kunna bidra till ett mer klimatsmart Sverige: </p>
+               <div>
+                  <ul>
+                     <li>Ta cykeln alternativt att gå istället för att ta bilen</li>
+                     <li>Börja källsortera</li>
+                     <li>Ät vegetariskt samt välj närproducerade och lokala produkter</li>
+                     <li>Drick kranvatten och inte vatten på flaska</li>
+                     <li>Stäng av lyset när du inte behöver ha det tänt</li>
+                  </ul>
+               </div>
+            </ion-item>
+
+            <h1 padding-left>Tips under ditt mässbesök:</h1>
+
+            <ion-item text-wrap>
+               <h2>Stifta bekantskap med Uniadens nyckelband</h2>
+               <p>När du kliver in på mässområdet så kommer du att välkomnas av våra entrévärdar. Entrévärdarna kommer att dela ut ett nyckelband till dig med en specifik färg. Den färg på nyckelbandet du får tilldelad speglar det område du studerar inom. Även företagen kommer att vara färgkodade på mässområdet. Färgkodningen av mässan gör det enklare för dig som besökare att se vilka företag som är intresserade av just den kompetens som du besitter.</p>
+            </ion-item>
+
+            <ion-item text-wrap>
+               <h2>Utnyttja garderoben</h2>
+               <p>Det må vara vinterkyla utomhus under mässdagen. Men vi på Uniaden kan garantera er värme inne på mässområdet. Vi föreslår därför att du passar på att utnyttja vår garderob vid entrén till Aula Nordica så att du kan koncentrera dig på det du kom hit för att göra. Nämligen knyta kontakter och marknadsföra dig själv!</p>
+            </ion-item>
+         </ion-scroll>
       </ion-list>
       <ion-list *ngSwitchCase="'about'">
-         <ion-item>
-            <h2>Vad är Uniaden?</h2>
-            <p> Uniaden är namnet på Sveriges bredaste arbetsmarknadsdag som årligen arrangeras vid Umeå universitet. Syftet med Uniaden är att utgöra en mötesplats för studenter och näringslivet. Studenterna får här under sin utbildningstid möjlighet att utforska vilka möjligheter som finns efter avslutad utbildning, möjligheter för exjobb, uppsatsskrivande, sommarjobb etc.
-            Vår ambition är att studenterna ska få utöka sitt nätverk under studietiden samt att få upp ögonen för vilka möjligheter som finns efter avslutad utbildning. Uniadens arrangerar årligen en arbetsmarknadsdag som går av stapeln vecka 5 i januari varje år. Utöver mässdagen arrangerar Uniaden tillsammans med intressanta företag ett flertal event, inspirerande gästföreläsningar, studiebesök och hackathon under hösten där studenter vid Umeå universitet får chansen att komma i kontakt med intressanta företag och organisationer.</p>
-         </ion-item>
-
+         <ion-scroll scrollY="true" >
+            <ion-item text-wrap>
+               <h2>Vad är Uniaden?</h2>
+               <p> Uniaden är namnet på Sveriges bredaste arbetsmarknadsdag som årligen arrangeras vid Umeå universitet. Syftet med Uniaden är att utgöra en mötesplats för studenter och näringslivet. Studenterna får här under sin utbildningstid möjlighet att utforska vilka möjligheter som finns efter avslutad utbildning, möjligheter för exjobb, uppsatsskrivande, sommarjobb etc.</p>
+               <p>Vår ambition är att studenterna ska få utöka sitt nätverk under studietiden samt att få upp ögonen för vilka möjligheter som finns efter avslutad utbildning. Uniadens arrangerar årligen en arbetsmarknadsdag som går av stapeln vecka 5 i januari varje år.</p>
+               <p>Utöver mässdagen arrangerar Uniaden tillsammans med intressanta företag ett flertal event, inspirerande gästföreläsningar, studiebesök och hackathon under hösten där studenter vid Umeå universitet får chansen att komma i kontakt med intressanta företag och organisationer.</p>
+            </ion-item>
+         </ion-scroll>
       </ion-list>
    </div>
 

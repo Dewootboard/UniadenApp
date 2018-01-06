@@ -5,6 +5,7 @@ import { Exhibitors } from '../exhibitors/exhibitors';
 import { Event } from '../event/event';
 
 @Component({
+   selector: "tabs",
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
