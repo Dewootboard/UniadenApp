@@ -59,9 +59,7 @@ angular.module('starter.controllers', [])
 .controller('CatalogCtrl', function($scope, $ionicModal, allCompanies, companies, $ionicLoading) {
 
   //allCompanies finns i app.js som i sin tur kör companies.all() från services.
-
   $scope.companyData = allCompanies;
-
   $scope.openDetails = function(companyId){
     company = companies.get(companyId);
 

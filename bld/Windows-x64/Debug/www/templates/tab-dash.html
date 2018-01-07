@@ -1,0 +1,406 @@
+﻿        <ion-view cache-view="false">
+            <ion-content class="dash-background" scroll="false">
+                <img src="img/Uniaden_header.png" class="uniaden-logo"/>
+            
+
+            <ion-content scroll="false">
+              <ion-slide-page>
+                <div class="item-avatar dashboardItem instagram-container" type="item-text-wrap">
+                    <img src="img/instagram.jpg" />
+                    <p style="font-size: 25px"> 
+                    <br /> #uniaden17</p>
+                    <i class="icon item-icon-right icon-accessory"></i>
+                </div>
+               </ion-slide-page>
+             </ion-content> 
+
+
+                            <!-- Slider på toppen av appen som uppmärksammmar användaren om vad som är nytt-->
+                            <!--   <ion-content scroll="false">
+            <ion-slide-page>
+                <div class="item-avatar dashboardItem" type="item-text-wrap">
+                    <img src="img/snapchat.jpg" />
+                    <i class="icon icon-accessory"></i>
+                    <p>
+                        Visste du att vi har ett snapchat-filter för
+                        Uniaden2017? Dela evenemanget med #Uniaden2017.
+                    </p>
+                </div>
+            </ion-slide-page>
+        </ion-content> -->
+
+
+                            <ion-list class="start-menu-buttons-container">
+                                <!--
+            Nedan är de tre knapparna på startsidan
+            ng-click öppnar respektive modal som just nu är hårdkodade.
+            PROTIP: Gör en rss-feed eller något annat skoj istället för hårdkod.
+            Samma sak gäller för closeModal(), respektive modal stängs mha ng-click.
+            -->
+
+                                <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(1)" type="item-text-wrap">
+                                    <img src="img/massan.jpg">
+                                    <h2>Mässguide</h2>
+                                    <i class="icon ion-chevron-right icon-accessory"></i>
+                                </ion-item>
+
+                                <!--Tillfälligt bortaget tills den nya kartan är färdig-->
+                                <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(2)" type="item-text-wrap">
+                                    <img src="img/mapThumbnail.jpg">
+                                    <h2>Mässkarta</h2>
+                                    <i class="icon ion-chevron-right icon-accessory"></i>
+                                </ion-item>
+
+                                <ion-item class="item-avatar item-icon-right dashboardItem" ng-click="openModal(3)" type="item-text-wrap">
+                                    <img src="img/partyThumbnail.jpg">
+                                    <h2>Klubb Uniaden</h2>
+                                    <i class="icon ion-chevron-right icon-accessory"></i>
+                                </ion-item>
+                            </ion-list>
+
+                            <script id="templates/tips.html" type="text/ng-template">
+                                <ion-modal-view class="modal">
+                                    <!--
+                Det går ej att ha bilder i en ion-header-bar, därför har vi ion-nav-bar ist.
+                -->
+                                    <ion-nav-bar align-title="center">
+                                        <ion-nav-buttons side="left">
+                                            <button ng-click="closeModal(1)" class="button icon ion-arrow-left-c"></button>
+                                        </ion-nav-buttons>
+                                        <ion-nav-title>
+                                            <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                                        </ion-nav-title>
+                                    </ion-nav-bar>
+                                    <ion-content class="padding has-header">
+                                        <!--<div class="card">
+                                            <div class="item item-text-wrap">-->
+                                                <div class="item item-image" style="border:none; margin:10%;">
+                                                    <img src="img/uniaden-app-intro.png">
+                                                </div>
+                                                <p style="margin-bottom:5%; text-align: center; font-size:16px;">
+                                                    <b>Välkommen till Uniaden 2017!</b>
+                                                </p>
+                                                <p style="margin-bottom:5%;">
+<!--
+                                                    I din hand finns kort information som ska hjälpa dig att få ut mer av arbetsmarknadsdagen.
+                                                    <br>
+                                                    <br> Vid entrén till mässområdet får varje besökare ett färgat nyckelband att hänga runt halsen. Detta för att färgen symboliserar huvudinriktningen i din utbildning, och snabbt visar utställarna på mässan vad du pluggar. Färgerna som
+                                                    symboliserar din huvudinriktning i utbildningen hittar ni även i de olika montrarna på mässan. Varje utställare har skyltning där de visar vilka utbildningar de riktar sig emot främst med färgkoderna.
+                                                    -->
+
+                                                    Uniaden har arrangerats på Umeå universitet sedan 1995 och klassas som Sveriges bredaste arbetsmarknadsmässa. Detta evenemang arrangeras varje år tillsammans med Umeå Naturvetar- och Teknologkår (NTK), HandelsHögskolan i Umeå. Studentföreningen (HHUS), Umeå Systemvetarförening (UMSYS) och Personalvetarna Umeå (PLUM). Uniaden är även campus största studentprojekt då vi har drygt 200 engagerade studenter som är med och hjälper till.
+                                                </p>
+
+                                                <p style="margin-bottom:50%;">
+                                                    Är du intresserad av att vara delaktig i Uniaden 2018?<br>
+                                                    Tveka då inte att söka till Uniadens projektgrupp!<br>
+                                                    Ansökningarna kommer att öppna i början av april.<br>
+                                                </p>
+
+                                                <p style="margin-bottom:50%; text-align: center;">
+                                                    <b>Uniadens hålltider</b><br>
+                                                    Mässan öppnar: 10:00<br>
+                                                    Insläpp gästföreläsning: 11:30<br>
+                                                    Gästföreläsning med Gina Dirawi: 12-13<br>
+                                                    Mässan stänger: 16:00<br>
+                                                    Bankett eftersläpp: 23:00<br>
+                                                </p>
+
+                                                <p style="text-align: center;">
+                                                    <b>Uniadens huvudsamarbetspartner är Umeå Näringslivsservice</b>
+                                                </p>
+                                                <div class="item item-image" style="margin-bottom:50%;">
+                                                    <img src="img/dejta_en_direktor.png">
+                                                </div>
+
+                                                <p style="text-align: center;">
+                                                    <b>Uniadens projektgrupp 2017</b>
+                                                </p>
+                                                <div class="item item-image" style="margin-bottom:5%;">
+                                                    <img src="img/projektgrupp_2017.JPG">
+                                                </div>
+
+                                                <p style="margin-bottom:5%">
+                                                    Vi vill här presentera projektgruppen som tillsammans planerat och arrangerat Uniaden 2017. Alla poster och uppgifter är lika viktiga för att dagen och alla aktiviteter som arrangerats under läsåret ska bli så bra och kvalitativ som möjligt. Vi vill passa på att rikta ett stort tack till alla våra koordinatorer och värdar. Er betydelse för detta projekt har betytt enormt mycket och vi är enormt tacksamma för att ni ställt upp och engagerat er i Uniaden.
+                                                </p>
+
+
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-leader">
+                                                        <img src="img/projectgroups/2017/taymaz.jpg">
+                                                        <p style="white-space: normal;">
+                                                            <b>Taymaz Tahmasebi Aria</b>
+                                                        </p>
+                                                        <p>
+                                                            Projektledare
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/elleng.jpg">
+                                                        <p>
+                                                            <b>Ellen Gustavsson</b>
+                                                        </p>
+                                                        <p>
+                                                            Vice projektledare
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/victor.jpg">
+                                                        <p>
+                                                            <b>Victor Tällö</b>
+                                                        </p>
+                                                        <p>
+                                                            Art Director
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/ellenp.jpg">
+                                                        <p>
+                                                            <b>Ellen Paulsson</b>
+                                                        </p>
+                                                        <p>
+                                                            Eventansvarig
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/ida.jpg">
+                                                        <p>
+                                                            <b>Ida Stjernström</b>
+                                                        </p>
+                                                        <p>
+                                                            Mässansvarig
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/hanny.jpg">
+                                                        <p>
+                                                            <b>Hanny Månsson</b>
+                                                        </p>
+                                                        <p>
+                                                            Bankettansvarig
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/fredrik.jpg">
+                                                        <p>
+                                                            <b>Fredrik Rignér</b>
+                                                        </p>
+                                                        <p>
+                                                            Företagsansvarig
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/olle.jpg">
+                                                        <p>
+                                                            <b>Olle Abrahamsson</b>
+                                                        </p>
+                                                        <p>
+                                                            Företagseventansvarig
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/johanna.jpg">
+                                                        <p>
+                                                            <b>Johanna Öhlin</b>
+                                                        </p>
+                                                        <p>
+                                                            Rekryteringsansvarig
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/calle.jpg">
+                                                        <p>
+                                                            <b>Calle Engström</b>
+                                                        </p>
+                                                        <p>
+                                                            Marknadsföringsansvarig
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/sandra.jpg">
+                                                        <p>
+                                                            <b>Sandra Högman</b>
+                                                        </p>
+                                                        <p>
+                                                            Sponsoransvarig
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-group-row" style="margin-bottom:50%;">
+                                                    <div class="item item-image project-member left">
+                                                           <img src="img/projectgroups/2017/philip.jpg">
+                                                        <p>
+                                                            <b>Philip Petersson</b>
+                                                        </p>
+                                                        <p>
+                                                            Logistikansvarig
+                                                        </p>
+                                                    </div>
+                                                    <div class="item item-image project-member right">
+                                                           <img src="img/projectgroups/2017/patrik.jpg">
+                                                        <p>
+                                                            <b>Patrik Hörnqvist</b>
+                                                        </p>
+                                                        <p>
+                                                            IT-ansvarig
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <p style="text-align: center;">
+                                                    <b>Temat</b>
+                                                </p>
+                                                <p style="margin-bottom:5%;">
+                                                    Temat för detta år är "Make Your Own Future". Tanken med årets tema ligger mycket i att karriärvägarna, yrkesrollerna och sysselsättningarna i dagens samhälle har förändrat marknaden. Idag ser vi profiler i samhället som skapat just dessa nya positioner och roller och det är här du har makten att tag i saken med dina egna händer. Det är du helt enkelt som själv bestämmer över hur din framtid kommer att se ut. Kommer det vara du som, tillsammans med din kurskamrat, förverkligar affärsplanen eller projektet ni jobbade med under studietiden? Är siktet redan inställt på drömföretaget eller kan det vara så att det finns andra vägar dit? Kommer det till och med vara så att just du kommer att starta drömföretaget för studenterna i framtiden?
+                                                </p>
+
+                                                <p style="margin-bottom: 50%">
+                                                    Det är just dessa frågor och möjligheter årets upplaga av Uniaden lagt fokus på. Möjligheterna finns där ute. Det är du som har makten att bestämma om du vill förverkliga din dröm enskilt eller tillsammans då du har många studenter med olika egenskaper som kan hjälpa dig att nå din dröm.
+                                                </p>
+                                            <!--</div>
+                                        </div>-->
+                                        
+                                        <p style="text-align: center; font-size:16px;">
+                                            <b>Tips under ditt mässbesök</b>
+                                        </p>
+
+                                        <div class="item item-text-wrap">
+                                            <p style="margin-bottom: 5%">
+                                                <b>Stifta bekantskap med våra nyckelband</b><br>
+                                                Precis när du kliver in i mässområdet kommer du att träffa våra kära entrévärdar. Där kommer du som besökare att få ett nyckelband med en specifik färg. För att underlätta ditt besök på mässan har Uniaden delat in mässan i olika färger. Denna färgkodning är till för att du som mässbesökare lättare ska veta vilka företag som är intresserade av just din utbildning.
+                                            </p>
+                                            <div>
+                                                <div class="programmeSquare color-Ekonomi">
+                                                    <p>Ekonomi</p>
+                                                </div>
+                                                <div class="programmeSquare color-Teknik">
+                                                    <p>Teknik</p>
+                                                </div>
+                                                <div class="programmeSquare color-IT">
+                                                    <p>IT-Media-Design</p>
+                                                </div>
+                                                <div class="programmeSquare color-Natur">
+                                                    <p>Naturvetenskap</p>
+                                                </div>
+                                                <div class="programmeSquare color-HRM">
+                                                    <p>HR Management</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="item item-text-wrap">
+                                            <p>
+                                                <b>Utnyttja garderoben</b><br>
+                                                Det må vara vinter och kallt i slutet av januari, men vi kan garantera er värme på mässområdet. Om du hänger av dig ytterkläderna vid entrén till Aula Nordica slipper du svettas i din dunjacka och kan koncentrera dig på vad du egentligen kom hit för - knyta kontakter och marknadsföra dig själv. 
+                                            </p>
+                                        </div>
+                                        <div class="item item-text-wrap">
+                                            <p>
+                                                <b>Du har huvudrollen</b><br>
+                                                Kom ihåg att det är du som innehar huvudrollen. Utställarna är här för att träffa just dig! Försök att ta reda på vad just din utbildning egentligen gör på ett företag för att få en bild om vad som väntar dig efter studierna. Ställ frågor om vilka kurser som är bra att ha läst för att du ska komma ännu närmare dit du vill. Passa även på att fråga om hur företagen ser på ideellt engagemang, högsta möjliga betyg kontra utlandsstudier. 
+                                            </p>
+                                        </div>
+                                        <div class="item item-text-wrap">
+                                            <p>
+                                                <b>StartUp Valley</b><br>
+                                                En nyhet för detta år är att vi har startat en ny sektion på mässområdet som heter “StartUp Valley” där vi har samlat in de lite yngre företagen, men som har en stor potential i framtiden. Kika gärna förbi där och låt dig inspireras om hur deras historia utspelade sig och hur deras väg startade. Passa på att prata om praktikplatser, sommarjobb, uppsatsarbeten eller om hur det är att vara entreprenör och starta eget.
+                                            </p>
+                                        </div>
+                                        <div class="item item-text-wrap" style="margin-bottom: 50%">
+                                            <p>
+                                                <b>Gästföreläsning</b><br>
+                                                Kom i tid och ta del av Gina Dirawi och hennes väg från webbkameran och fiktiva karaktärer till julvärd, musikhjälpen och melodifestivalen. Allt inom loppet av mindre än 6 år. Hur mycket tankar, idéer och förarbete ligger bakom det allra första youtube-klippet? Ingen föranmälan krävs till denna föreläsning som anordnas i Aula Nordica med start 12:00. Insläpp börjar kl 11:30!
+                                            </p>
+                                        </div>
+
+                                        <p style="text-align: center;">
+                                            <b>Träffa våra ägarföreningar i studentloungen</b>
+                                        </p>
+                                        <div style="width:100%; display: flex; flex-flow: nowrap; flex-direction: row; justify-content: space-around; align-items: center; margin-bottom: 5%;">
+                                            <div class="item item-image" style="float:left; width: 46%; border:none; vertical-align: middle; padding:3%;">
+                                                <img src="img/NTK_logotyp.png">
+                                            </div>
+                                            <div class="item item-image" style="float:right; width: 46%; border:none; vertical-align: middle; padding:3%;">
+                                                <img src="img/hhus_logotyp.jpg">
+                                            </div>
+                                        </div>
+                                        <div style="width:100%; display: flex; flex-flow: nowrap; flex-direction: row; justify-content: space-around; align-items: center; margin-bottom: 5%;">
+                                            <div class="item item-image" style="float:left; width: 46%; border:none; vertical-align: middle; padding:3%;">
+                                                <img src="img/plum_logotyp.jpg">
+                                            </div>
+                                            <div class="item item-image" style="float:right; width: 46%; border:none; vertical-align: middle; padding:3%;">
+                                                <img src="img/umsys_logotyp.png">
+                                            </div>
+                                        </div>
+                                    </ion-content>
+                                </ion-modal-view>
+                            </script>
+
+                             <script id="templates/map.html" type="text/ng-template">
+                                <ion-modal-view class="modal">
+                                    <ion-nav-bar align-title="center">
+                                        <ion-nav-buttons side="left">
+                                            <button ng-click="closeModal(2)" class="button icon ion-arrow-left-c"></button>
+                                        </ion-nav-buttons>
+                                        <ion-nav-title>
+                                            <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                                        </ion-nav-title>
+                                    </ion-nav-bar>
+                                    <ion-content class="padding has-header">
+
+                                        <div class="item item-image">
+                                            <img src="img/app_map.png">
+                                        </div>
+                                    </ion-content>
+                                </ion-modal-view>
+                            </script>
+
+                            <script id="templates/club.html" type="text/ng-template">
+                                <ion-modal-view class="modal">
+                                    <ion-nav-bar align-title="center">
+                                        <ion-nav-buttons side="left">
+                                            <button ng-click="closeModal(3)" class="button icon ion-arrow-left-c"></button>
+                                        </ion-nav-buttons>
+                                        <ion-nav-title>
+                                            <img src="img/uniadenLogo.png" class="uniadenHeaderLogo">
+                                        </ion-nav-title>
+                                    </ion-nav-bar>
+                                    <ion-content class="padding has-header">
+                                        <div class="card">
+                                            <div class="item item-text-wrap">
+
+                                                <p>
+                                                    Fira avslutet på årets mässa tillsammans med oss!
+                                                    Den 31 januari hålls årets upplaga av Uniaden. Vi vill självklart inte att ni ska avsluta dagen efter mässans slut. Vi bjuder därför in er till en storslagen fest på universitetet!
+                                                    <br>
+                                                    Klubb Uniaden är stället där du kan festa tillsammans med andra studenter och företagsrepresentanter. Ett härligt sätt att avsluta årets mässa.
+                                                    <br>
+                                                    <br> Plats: Universum (Brashörnan)
+                                                    <br> Tid: 22:45
+                                                    <br> Ålder: 20 år (18 år med giltigt kårleg)
+                                                    <br> Pris: 25:-
+                                                    <br> Biljetter säljs i studentloungen
+                                                    <br>
+                                                    <br> Vid funderingar kontakta bankett@uniaden.com
+                                                    <br>
+                                                </p>
+                                                <div class="item item-image">
+                                                    <img src="img/partyThumbnail.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ion-content>
+                                </ion-modal-view>
+                            </script>
+</ion-content>
+</ion-view>

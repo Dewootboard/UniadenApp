@@ -39,7 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/tab-catalog.html',
         controller: 'CatalogCtrl',
         resolve: {
-          allCompanies: function(companies) {
+          allCompanies : function(companies) {
             return companies.all();
           }
         }

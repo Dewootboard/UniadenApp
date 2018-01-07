@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.uniaden.connect" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Uniaden Connect</name>
+    <description>
+        En app fÃ¶r att hjÃ¤lpa dig pÃ¥ mÃ¤ssan den 31/1!
+    </description>
+    <author email="it@uniaden.com">
+      Mattias Johansson och Oskar Hauer
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <vs:toolsetVersion xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">6.3.1</vs:toolsetVersion>
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="windows-target-version" value="10.0" />
+</widget>

@@ -3,9 +3,13 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\Kim\AppData\Local\Temp\UniadenApp_refcache</ReferenceCachePath>
     <ShowAllFiles>false</ShowAllFiles>
+    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
+    <DebuggerFlavor>SimulateGalaxyS5</DebuggerFlavor>
     <AndroidEmulatorID>AndroidEmulator;Google Android Emulator</AndroidEmulatorID>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|iOS'">
+    <DebuggerFlavor>SimulateiPhone6</DebuggerFlavor>
   </PropertyGroup>
 </Project>

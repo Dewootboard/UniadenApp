@@ -44,3 +44,83 @@
 	width: 100%; 
 	bottom: 0;
 }
+
+.zoom-pane {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+  .zoom-pane .scroll {
+    min-height: 100% !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: left;
+    -moz-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: center;
+    justify-content: left;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: left;
+    -moz-box-align: left;
+    -webkit-align-items: left;
+    -ms-flex-align: left;
+    align-items: left;
+  }
+
+#mapImage {
+  background: url("img/app_map.png");
+}
+
+.ion-background {
+  background-image: url('/assets/imgs/Mässkarta.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: 20% 80%;
+}
+
+.button-md {
+  padding: 5% 20% 5% 20%;
+}
+
+ion-col div {
+  text-align: center;
+}
+
+p {
+  padding: 10px 0 0 10px !important;
+  margin: 0;
+}
+
+.bottom-aligned {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.header-itemm {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.item-icon-right {
+  margin: 5px 20% 5px 20%;
+  padding: 10px 20px 10px 20px;
+  border: none 0;
+  background-color: rgba(0, 0, 0, 0.10);
+}
+

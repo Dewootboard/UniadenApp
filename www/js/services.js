@@ -3,12 +3,13 @@ angular.module('starter.services', [])
 
 .factory('companies', function($http, $q, $ionicLoading) {
   var companies;
+  var jsonString;
   return {
     // funktionen all hämtar information från jexpo
     // för mer info om $q,resolve,promises osv: googla.
     all: function(){
 
-      var dfd = $q.defer();
+      var deferred = $q.defer();
       //Laddgrej medans json-filen hämtas
       $ionicLoading.show({
         content: '<ion-spinner icon="crescent"></ion-spinner>',
@@ -18,12 +19,18 @@ angular.module('starter.services', [])
         showDelay: 0
       });
 
-      $http.get('http://api.jexpo.se/exhibitors?namespace=uniaden&limit=0').then(function(response){
-        companies = response.data;
-        dfd.resolve(companies);
-        $ionicLoading.hide();
+     // $http.get('http://p17.jexpo.se/uniaden/exhibitors?getAttributes=1&filter=["published:true"]').then(function (response) {
+      $http.get('http://p17.jexpo.se/uniaden/exhibitors?getAttributes=1&filter=["published:true"]').then(function (response) {
+          jsonString = JSON.stringify(response.data);
+          jsonString = jsonString.replace("{\"results\":[", "[").slice(0, -1)   
+          companies = JSON.parse(jsonString);
+          //companies = response.data;
+          deferred.resolve(companies);
+          $ionicLoading.hide();
       });
-      return dfd.promise;
+        return deferred.promise;
+     // });
+      
     },
     get: function(companyId) {
       for (var i = 0; i < companies.length; i++) {

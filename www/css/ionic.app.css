@@ -9745,8 +9745,8 @@ a.button {
 
 .uniaden-logo {
   height: auto;
-  width: 60%;
-  margin-top: 100px;
+  width: 100%;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -9819,14 +9819,17 @@ a.button {
   font-weight: 400; }
 
 .dashboardItem {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-width: 0px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px; 
+}
 
 .dashboardItem p {
-  color: #cccccc; }
+  color: #f28480;
+}
 
 .dashboardItem h2 {
-  color: #FFF;
-  font-weight: 200;
-  font-size: 24px; }
+  color: #444444;
+  font-weight: 400;
+  font-size: 24px;
+}
