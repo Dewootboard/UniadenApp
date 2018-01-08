@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "uniadenApp: An Ionic project",
   "dependencies": {
-    "cordova-android": "^6.3.0",
+    "cordova-android": "6.3.0",
     "cordova-ios": "4.2.0",
     "cordova-plugin-console": "~1.0.5",
     "cordova-plugin-device": "~1.1.6",
