@@ -1,4 +1,4 @@
-<ion-view cache-view="false">
+﻿<ion-view cache-view="false" ng-controller="DashCtrl">
     <ion-content scroll="false">
         <img src="img/Logga.svg" class="uniaden-logo"/>
             
@@ -77,6 +77,16 @@
                                         <img src="img/Du_Kan_wht.png">
                                       </div>
 
+                                      <!-- Öpettider -->
+                                      <div class="item item-text-wrap">
+                                        <p>
+                                          <b>Mässans öppettider: 09.00-15.00</b> <br />
+                                          Till de 100 första besökarna utlovas en välfylld frukostpåse i studentloungen!
+                                        </p>
+                                      </div>
+
+
+                                      <!-- Hålltider -->
                                       <div class="item item-text-wrap">
                                         <p>
                                           <b>Uniadens hålltider</b><br />
@@ -89,14 +99,12 @@
                                         </p>
                                       </div>
 
-                                      <!-- Transport -->
+                                      <!-- Studentlounge -->
                                       <div class="item item-text-wrap">
                                         <p>
-                                          <b>Persontransport</b> <br />
-                                          Under och efter banketten/eftersläppet kommer det finnas möjlighet att få rabatterat pris på EcoTaxi. För att erhålla rabatt på resan så måste ni ladda ner och boka resan via EcoTaxis app.
-                                          När ni bokar taxin fyller ni i fältet som heter "kampanj", där fyller ni i rabattkoden ("Uniaden") INNAN ni genomför bokningen.
-                                          När ni fyllt i detta fällt och appen godkänt rabattkoden så kommer man per automatik erhålla ett pris när man bokar som är 20% rabatterat mot ordinarie pris.
-                                          Appen ger alltid kunden ett fast pris på resan dessutom!
+                                          <b>Studentlounge</b> <br />
+                                          <b>Öppettider</b>: 09.00-15.00 <br />
+                                          <b>Plats</b>: Mitt emot Amigo, nedre plan av Universum
                                         </p>
                                       </div>
 
@@ -123,32 +131,31 @@
                                           30/1 klockan 22:15 slår vi upp portarna till årets eftersläpp på Corona; Uniaden Afterparty! Ingång via Corona. Inträde 50 kr innan kl. 23.00.
                                         </p>
                                       </div>
-                                      <!--</div>
-  </div>-->
-                                      <!-- Studentlounge -->
-                                      <div class="item item-text-wrap">
-                                        <p>
-                                          <b>Studentlounge</b> <br />
-                                          <b>Öppettider</b>: 09.00-15.00 <br />
-                                          <b>Plats</b>: Mitt emot Amigo, nedre plan av Universum
-                                        </p>
-                                      </div>
 
-                                      <!-- Öpettider -->
+                                      <!-- Transport -->
                                       <div class="item item-text-wrap">
                                         <p>
-                                          <b>Mässans öppettider: 09.00-15.00</b> <br />
-                                          Till de 100 första besökarna utlovas en välfylld frukostpåse i studentloungen!
+                                          <b>Persontransport</b> <br />
+                                          Under och efter banketten/eftersläppet kommer det finnas möjlighet att få rabatterat pris på EcoTaxi. För att erhålla rabatt på resan så måste ni ladda ner och boka resan via EcoTaxis app.
+                                          När ni bokar taxin fyller ni i fältet som heter "kampanj", där fyller ni i rabattkoden ("Uniaden") INNAN ni genomför bokningen.
+                                          När ni fyllt i detta fällt och appen godkänt rabattkoden så kommer man per automatik erhålla ett pris när man bokar som är 20% rabatterat mot ordinarie pris.
+                                          Appen ger alltid kunden ett fast pris på resan dessutom!
                                         </p>
                                       </div>
+                                      
 
                                       <!-- Gästföreläsare -->
                                       <div class="item item-text-wrap">
                                         <p>
                                           <b>Gästföreläsare</b> <br />
-                                          Ta chansen att bli inspirerad och motiverad av årets välkända gästföreläsare som inte är mindre än Nour El Refai.  Gästföreläsningen börjar kl. 12.00 i Aula Nordica ochkräver ingen föranmälan och är gratis.
-                                          Insläppet börjar kl. 11.30 så kom i tid! I TV har vi kunnat se Nour i bland annat; Babel, Cirkus Möller samt som gästreporter i Nyhtesmorgon i TV4. Som skådespelerska har Nour även engagerats för flera filmsuccéer som Beck och Wallander.
-                                          I Umeå kommer Nour att berätta om hennes tankar kring vad som är modigt och inte samt hur man överlever i en mansdominerad bransch som tjej dessutom som ung och utländsk.
+                                          Ta chansen att bli inspirerad och motiverad av årets välkända gästföreläsare som inte är mindre än Nour El Refai.
+                                          Gästföreläsningen börjar kl. 12.00 i Aula Nordica ochkräver ingen föranmälan och är gratis.
+                                          Insläppet börjar kl. 11.30 så kom i tid! <br />
+                                          <br />
+                                          I TV har vi kunnat se Nour i bland annat; Babel, Cirkus Möller
+                                          samt som gästreporter i Nyhtesmorgon i TV4. Som skådespelerska har Nour även engagerats för flera filmsuccéer
+                                          som Beck och Wallander. I Umeå kommer Nour att berätta om hennes tankar kring vad som är modigt 
+                                          och inte samt hur man överlever i en mansdominerad bransch som tjej dessutom som ung och utländsk.
                                         </p>
                                       </div>
 
@@ -157,9 +164,10 @@
                                         <p>
                                           <b>Dejta en direktör</b><br />
                                           Umeå Näringslivsservice och Uniaden ger dig chansen till ett möte som kan ge dig värdefulla tips inför din framtida karriär, eller kanske till och med ett jobb!
-                                          Det enda du behöver göra är att fylla i formuläret nedan. Anmäl dig senast den 30 januari 23.59. Vi meddelar alla lyckliga vinnare via mail under början av februari:
+                                          Det enda du behöver göra är att fylla i formuläret nedan. Anmäl dig senast den 30 januari 23.59. Vi meddelar alla lyckliga vinnare via mail under början av februari:<br />
+                                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2rtXm-0k-TAEYi2rGB-hjdOD9b8JIwdgzmqe1x_MUwmqX7w/viewform?usp=sf_link" padding-left>
+                                          Ansök här!</a>
                                         </p>
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2rtXm-0k-TAEYi2rGB-hjdOD9b8JIwdgzmqe1x_MUwmqX7w/viewform?usp=sf_link" padding-left>Formuläret</a>
                                       </div>
 
                                       <!-- Titel -->
@@ -177,11 +185,28 @@
                                         </p>
                                       </div>
 
+                                      <div class="item item-text-wrap">
+                                        <p>
+                                          <b>Draknästet</b>
+                                          I samarbete med Uminova Innovation, Venture cup och Umeå Näringslivsservice har Uniaden i år
+                                          valt att införa en pitchtävling vid namn Draknästet. I draknästet har du chans att få pitcha
+                                          din affärsidé framför en jury bestående av olika branschpersoner. Du får här möjligheten att
+                                          vara med och få feedback på just din affärsidé. Som en extra bonus har du chansen att vara 
+                                          med och vinna 5 000 kr.<br />
+                                          <br />
+                                          Kom ihåg att din affärsidé behöver inte vara färdigutvecklad, men 
+                                          så länge du har en idé så vill vi gärna höra den! Draknästet kommer att äga rum den 21 
+                                          februari, mer information och anmälan till tävlingen hittar du på: 
+                                          <a href="http://www.uniaden.com/draknastet/">uniaden.com/draknastet</a>
+                                        </p>  
+                                      </div>
+
+
                                       <!-- Miljömärkt -->
                                       <div class="item item-text-wrap">
                                         <p>
                                           <b>Miljömärkt Event</b> <br />
-                                          Uniaden slår ett Som ett steg för att vara ett hållbart event så har vi på Uniaden i år arbetat för att bli miljöcertifierade av Håll Sverige Rent. Arbetet har resulterat
+                                          Som ett steg för att vara ett hållbart event så har vi på Uniaden i år arbetat för att bli miljöcertifierade av Håll Sverige Rent. Arbetet har resulterat
                                           i att Uniaden 2018 uppfyller de kriterier för att vara ett miljömärkt event. Vi har därför några enkla knep för att kunna bidra till ett mer klimatsmart Sverige:<br /><br />
 
                                           Ta cykeln alternativt att gå istället för att ta bilen<br />
@@ -191,6 +216,21 @@
                                           Stäng av lyset när du inte behöver ha det tänt
                                         </p>
                                       </div>
+
+                                      <!-- Årets Tema -->
+                                      <div class="item item-text-wrap">
+                                        <p>
+                                          <b>Årets Tema</b> <br />
+                                          Temat för årets Uniaden är ”DU KAN”. Temat ska återspegla varje individs potential i samhället. 
+                                          Vi vill med årets tema poängtera att du som individ kan uppnå de drömmar och visioner du har, 
+                                          oavsett hur små eller stora de är. Med årets tema vill vi även påpeka att livet till stor del 
+                                          handlar om att våga testa nya saker, våga utmana sig själv och sin comfort-zone samt att 
+                                          våga misslyckas. Alla dessa delar tror vi är viktig för att man ska kunna utveckla sig själv 
+                                          till att bli den individ som man vill vara. Vi vet att varje individ kan utveckla sig själv 
+                                          bara man vill. Årets tema för i år är därför….DU KAN!
+                                        </p>
+                                      </div>
+
 
                                       <!-- Titel -->
                                       <div class="text-center" style="margin-top: 10%">
@@ -265,16 +305,14 @@
                                         </ion-nav-title>
                                     </ion-nav-bar>
                                     <ion-content class="padding has-header">
-                                      
                                         <ion-scroll id="mapImage"
                                                     zooming="true"
                                                     direction="xy"
-                                                    delegate-handle="zoom-pane"
                                                     class="zoom-pane"
+                                                    delegate-handle="zoom-pane"
                                                     min-zoom="0.1"
-                                                    max-zoom="25"
+                                                    max-zoom="20"
                                                     overflow-scroll="false">
-
                                           <img src="img/app_map.png" style="overflow: visible;">
                                         </ion-scroll>
                                     </ion-content>
